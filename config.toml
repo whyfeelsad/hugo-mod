@@ -1,0 +1,13 @@
+[module]
+noProxy = 'none'
+noVendor = ''
+private = '*.*'
+proxy = 'direct'
+replacements = ''
+vendorClosest = false
+workspace = 'off'
+
+[module.hugoVersion]
+extended = false
+min = '0.126.0'
+max = '0.136.0'
