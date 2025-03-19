@@ -1,4 +1,89 @@
+/* https://github.com/unacro/hugo-theme-blowfish-mod/blob/main/assets/css/custom.css */
+
+:root {
+    font-size: 16px;
+}
+
+html {
+    /* font-size: 13pt; */
+    font-size: 1rem;
+}
+
 body {
     font-family: "LXGW WenKai", "LXGW WenKai Screen", sans-serif;
     font-weight: normal;
+}
+
+article {
+    & p {
+        margin: .75rem auto !important;
+    }
+
+    & ul,
+    & ol {
+        margin-top: .75rem !important;
+    }
+
+    & code,
+    & pre,
+    & kbd,
+    & samp {
+        font-family: "LXGW WenKai Mono", "Consolas", monospace;
+        font-weight: normal;
+    }
+
+    & mark {
+        & a {
+            color: #ce7b0d !important;
+        }
+    }
+
+    & rt {
+        font-size: .75rem;
+    }
+
+    & dfn,
+    & abbr[title] {
+        margin-inline-end: 1px;
+        padding-block-end: 1px;
+        border-block-end: 1px dotted;
+        text-decoration: none;
+        cursor: help;
+    }
+
+    & dfn {
+        font-style: italic;
+    }
+}
+
+/* 右上导航菜单, 默认样式有点挤 */
+/* div.main-menu> :first-child {
+  margin-top: .25rem;
+} */
+
+.katex-display {
+    overflow: visible;
+    /* 默认样式为 hidden, 生怕你看全了公式是吧, 神金 */
+}
+
+.mermaid {
+    /* todo: 修改字体 */
+    font-family: inherit;
+}
+
+.spoiler {
+    /* background-color: rgba(0, 0, 0, 1); */
+    /* color: rgba(0, 0, 0, 1); */
+    filter: blur(.25rem);
+
+    &:hover {
+        /* color: rgba(255, 255, 255, 1); */
+        filter: unset;
+    }
+}
+
+.ygo-card {
+    padding: .2rem;
+    border: #ce7b0d solid .125rem;
+    border-radius: .3rem;
 }
